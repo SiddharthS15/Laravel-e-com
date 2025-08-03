@@ -1,18 +1,10 @@
 {
-  "functions": {
-    "public/index.php": {
-      "runtime": "vercel-php@0.6.0"
-    }
-  },
-  "routes": [
+  "note": "Vercel has limited PHP support for Laravel. Use Render.com instead for better Laravel compatibility.",
+  "redirects": [
     {
-      "src": "/(.*)",
-      "dest": "/public/index.php"
+      "source": "/(.*)",
+      "destination": "https://render.com",
+      "permanent": false
     }
-  ],
-  "env": {
-    "APP_ENV": "production",
-    "APP_DEBUG": "false",
-    "LOG_CHANNEL": "stderr"
-  }
+  ]
 }
