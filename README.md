@@ -110,11 +110,15 @@ The application includes:
 
 ## 🚀 Hosting
 
-### Railway Deployment (Recommended)
+### One-Click Railway Deployment
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/laravel)
+
+### Manual Railway Deployment
 
 1. **Create Railway Account**: Visit [railway.app](https://railway.app) and sign up
 2. **Deploy from GitHub**: 
-   - Click "Deploy from GitHub repo"
+   - Click "Deploy from GitHub repo"  
    - Select `SiddharthS15/Laravel-e-com`
 3. **Set Environment Variables** (Critical!):
    ```
