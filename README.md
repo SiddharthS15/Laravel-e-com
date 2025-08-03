@@ -108,6 +108,40 @@ The application includes:
 - Mobile-friendly design
 - Professional styling with hover effects
 
+## 🚀 Hosting
+
+### Railway Deployment (Recommended)
+
+1. **Create Railway Account**: Visit [railway.app](https://railway.app) and sign up
+2. **Deploy from GitHub**: 
+   - Click "Deploy from GitHub repo"
+   - Select `SiddharthS15/Laravel-e-com`
+3. **Set Environment Variables** (Critical!):
+   ```
+   APP_NAME=Laravel E-commerce
+   APP_ENV=production
+   APP_KEY=base64:+5tTIbdCqBsi9RRiRvtxQ/wP85N7npgzdM4MGAfzzh0=
+   APP_DEBUG=false
+   DB_CONNECTION=sqlite
+   DB_DATABASE=/tmp/database.sqlite
+   ```
+4. **Deploy**: Railway will automatically build and deploy
+
+### Troubleshooting 500 Errors
+
+If you encounter a 500 server error:
+
+1. **Environment Variables**: Ensure `APP_KEY` is properly set in Railway
+2. **Debug Mode**: Temporarily set `APP_DEBUG=true` to see detailed errors
+3. **Check Logs**: View Railway deployment logs for specific error messages
+4. **Storage Permissions**: Ensure Laravel can write to storage directories
+
+### Alternative Hosting Options
+
+- **Heroku**: Use included `Procfile`
+- **Vercel**: Auto-detects Laravel configuration  
+- **DigitalOcean**: Use App Platform with Laravel preset
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
